@@ -1,11 +1,9 @@
-import { Global } from '@emotion/react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { FC, useEffect } from 'react'
-import { globalStyles } from '../styles/global.styles'
-import theme from '../styles/theme'
+import theme from '../client/theme'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -19,14 +17,10 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Telemarket | Buy online</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
+        <title>MCX Validator</title>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
-        <Global styles={globalStyles} />
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>

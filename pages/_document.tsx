@@ -1,7 +1,7 @@
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
-import theme from '../styles/theme'
+import theme from '../client/theme'
 
 export default class MyDocument extends Document {
   render() {
@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body style={{ backgroundColor: theme.palette.background.default }}>
+        <body style={{ backgroundColor: theme.palette.background.paper }}>
           <Main />
           <NextScript />
         </body>
