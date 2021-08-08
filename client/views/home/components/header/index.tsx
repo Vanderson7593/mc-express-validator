@@ -6,7 +6,7 @@ const Header: FC = () => (
   <>
     <Grid container direction="column" alignItems="center">
       <Grid item>
-        <Image src="/mcx-logo.png" width={236} height={120} />
+        <Image src="/mcx-logo.png" width={200} height={98} />
       </Grid>
       <Grid item>
         <Typography variant="h5" color="primary">

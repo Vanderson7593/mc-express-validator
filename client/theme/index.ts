@@ -1,5 +1,6 @@
-import { orange, lightBlue, grey, blueGrey } from '@material-ui/core/colors'
+import { orange, grey, blueGrey } from '@material-ui/core/colors'
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints'
 
 let theme = createMuiTheme({
   props: {
@@ -7,6 +8,27 @@ let theme = createMuiTheme({
       underline: 'none',
       target: '_blank',
       color: 'inherit'
+    },
+    MuiInputBase: {
+      autoFocus: true
+    }
+  },
+  overrides: {
+    MuiInputBase: {
+      root: {
+        backgroundColor: grey[200],
+        borderRadius: 4,
+        padding: 1,
+        paddingLeft: 10,
+        paddingRight: 10,
+        width: '100%'
+      }
+    },
+    MuiIconButton: {
+      root: {
+        borderRadius: 4,
+        height: 35
+      }
     }
   },
   palette: {

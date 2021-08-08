@@ -5,6 +5,8 @@ import Head from 'next/head'
 import { FC, useEffect } from 'react'
 import theme from '../client/theme'
 
+require('../mock-server')
+
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     // Remove the server-side injected CSS.

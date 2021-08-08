@@ -1,3 +1,7 @@
+import { IInvoice } from '@types'
+
 export interface StatusProperties {
-  status: boolean
+  data: IInvoice | undefined | null
+  error: boolean
+  success: boolean
 }
