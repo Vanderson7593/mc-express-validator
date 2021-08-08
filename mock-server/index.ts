@@ -1,5 +1,7 @@
+let server;
+let worker;
 if (typeof window === 'undefined') {
-  const { server } = require('./server')
+const { server } = require('./server')
 
   server.listen()
 } else {
@@ -7,3 +9,4 @@ if (typeof window === 'undefined') {
 
   worker.start()
 }
+ export default {server, worker}

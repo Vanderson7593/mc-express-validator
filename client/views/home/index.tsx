@@ -20,11 +20,11 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import validationSchema from 'client/utils/validation-schema'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import HelpIcon from '@material-ui/icons/Help'
-import { BILLS } from 'client/mocks/bills'
+import { INVOICES } from 'client/mocks/invoices'
 
 type TFormValues = { id: number }
 
-const renderIds = (): string => BILLS.map(x => x.id).join(' | ')
+const renderIds = (): string => INVOICES.map(x => x.id).join(' | ')
 
 const Home: FC = () => {
   const { palette } = useTheme()

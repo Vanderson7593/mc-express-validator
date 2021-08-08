@@ -1,7 +1,7 @@
 import { EInvoice, EOperation } from '@constants'
 import { IInvoice } from '@types'
 
-export const BILLS = [
+export const INVOICES = [
   {
     [EInvoice.Amount]: 64500,
     [EInvoice.Datetime]: new Date(),
